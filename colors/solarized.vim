@@ -995,7 +995,7 @@ function! s:SolarizedHiTrail()
     if g:solarized_hitrail==0
         hi! clear solarizedTrailingSpace
     else
-        syn match solarizedTrailingSpace "\s*$"
+        syn match solarizedTrailingSpace "\s+$"
         exe "hi! solarizedTrailingSpace " .s:fmt_undr .s:fg_red .s:bg_none .s:sp_red
     endif
 endfunction  
